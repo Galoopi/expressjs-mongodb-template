@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  
+
+  form(method='POST' action='/adduser')
+          div.form-group
+            label(for='name') Name:
+            input#username.form-control(type='text', placeholder='username' name='username')
+          div.form-group
+            label(for='email') Email:
+            input#useremail.form-control(type='email', placeholder='email' name='useremail')
+          
+          button.btn.btn-primary(type='submit') Submit
+
+
+      
+
+
+        
+
+
+
+   
+
+

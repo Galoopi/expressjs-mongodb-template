@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  ul
+  each user  in userlist
+    li=  user.username + " : " + user.email
+  ul
+  - const numbers = {username:"ben",email:'two@two.com',3:'three'}
+  each val,id  in numbers
+    li= id + ":" + val 
+
+
+
+
+   
+
+
